@@ -1,0 +1,132 @@
+/* Reset básico para limpar margens e preenchimentos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Configuração do fundo e estrutura da página */
+body {
+    background-color: #1e293b; /* Fundo azul escuro do modelo */
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Cabeçalho Preto */
+header {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2rem;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+    text-decoration: underline;
+}
+
+/* Container que centraliza o formulário na tela */
+.contato-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    width: 100%;
+}
+
+/* Cartão Branco do Formulário */
+.card-contato {
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 550px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    text-align: left;
+}
+
+.card-contato h2 {
+    font-size: 1.8rem;
+    margin-bottom: 8px;
+    color: #111111;
+}
+
+.card-contato p {
+    font-size: 0.95rem;
+    color: #666666;
+    margin-bottom: 25px;
+}
+
+/* Grupos de caixas de entrada (Inputs) */
+.input-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #111111;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 0.95rem;
+    outline: none;
+    background-color: #ffffff;
+}
+
+/* Efeito azul ao focar nos campos */
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: #1e293b;
+}
+
+/* Botão de Enviar Escuro */
+.btn-enviar {
+    background-color: #111111;
+    color: #ffffff;
+    padding: 14px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-enviar:hover {
+    background-color: #333333;
+}
+
+/* Rodapé Preto */
+footer {
+    background-color: #111111;
+    color: #aaaaaa;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
